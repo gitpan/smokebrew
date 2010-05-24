@@ -23,31 +23,31 @@ no_index:
 provides:
   App::SmokeBrew:
     file: lib/App/SmokeBrew.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::BuildPerl:
     file: lib/App/SmokeBrew/BuildPerl.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::IniFile:
     file: lib/App/SmokeBrew/IniFile.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::PerlVersion:
     file: lib/App/SmokeBrew/PerlVersion.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::Plugin:
     file: lib/App/SmokeBrew/Plugin.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::Plugin::CPANPLUS::YACSmoke:
     file: lib/App/SmokeBrew/Plugin/CPANPLUS/YACSmoke.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::Plugin::Null:
     file: lib/App/SmokeBrew/Plugin/Null.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::Tools:
     file: lib/App/SmokeBrew/Tools.pm
-    version: 0.02
+    version: 0.04
   App::SmokeBrew::Types:
     file: lib/App/SmokeBrew/Types.pm
-    version: 0.02
+    version: 0.04
 requires:
   Archive::Extract: 0.40
   Config::INI::Reader: 0.014
@@ -55,7 +55,7 @@ requires:
   File::Fetch: 0.24
   File::Path: 2.08
   File::Spec: 3.31
-  File::chdir: 0.1003
+  File::pushd: 1.00
   IPC::Cmd: 0.58
   List::MoreUtils: 0.22
   Log::Message::Simple: 0.06
@@ -79,4 +79,4 @@ resources:
   homepage: http://github.com/bingos/smokebrew/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/smokebrew.git
-version: 0.02
+version: 0.04
