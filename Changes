@@ -1,4 +1,14 @@
 ==============================
+2010-06-02 23:31:28 +0100 0.06
+==============================
+
+  commit ff48321fc3f4e372bba7ef3f3830bdd67bacacd5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Jun 2 23:31:28 2010 +0100
+  
+    Fixed the rather clunky plugin loading code 
+
+==============================
 2010-05-24 21:42:06 +0100 0.04
 ==============================
 
