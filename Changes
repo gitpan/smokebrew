@@ -1,4 +1,21 @@
 ==============================
+2010-08-26 16:19:54 +0100 0.08
+==============================
+
+  commit ad243e453bbec974c30968570615881ae9f89ac8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 26 16:19:54 2010 +0100
+  
+    Added the --install switch so we can specify a particular perl
+    version to install
+
+  commit e58565406d058b25e949fbaa0e35049eee46fcb6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Jun 23 09:18:47 2010 +0100
+  
+    Move the installation of Module::Build ahead of selfupdate 
+
+==============================
 2010-06-02 23:31:28 +0100 0.06
 ==============================
 
