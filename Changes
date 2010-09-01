@@ -1,4 +1,15 @@
 ==============================
+2010-09-01 19:34:46 +0100 0.10
+==============================
+
+  commit d4b2c9205aa3dc9e41993954a67716a6c2b60a98
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 1 19:34:46 2010 +0100
+  
+    Added --forcecfg option to enable reconfiguration on an existing
+    build 
+
+==============================
 2010-08-26 16:19:54 +0100 0.08
 ==============================
 
