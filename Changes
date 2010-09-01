@@ -1,4 +1,15 @@
 ==============================
+2010-09-01 20:50:52 +0100 0.14
+==============================
+
+  commit 0993e1b51b83e69817304834f598d7a7e8690c61
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 1 20:50:52 2010 +0100
+  
+    Added setting the PERL_MM_USE_DEFAULT env var in the
+    CPANPLUS::YACSmoke plugin 
+
+==============================
 2010-09-01 20:12:20 +0100 0.12
 ==============================
 
