@@ -1,4 +1,15 @@
 ==============================
+2010-09-08 19:51:43 +0100 0.16
+==============================
+
+  commit be25e4dddbdbf3fb0d51f502c6b4e47d221f76d8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 8 19:51:43 2010 +0100
+  
+    Mirrors weren't propagating down through BuildPerl to the fetching of
+    the perl source. Fixed. 
+
+==============================
 2010-09-01 20:50:52 +0100 0.14
 ==============================
 
