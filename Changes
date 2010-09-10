@@ -1,4 +1,15 @@
 ==============================
+2010-09-10 10:35:43 +0100 0.18
+==============================
+
+  commit 6b1f379d74d48ae4f5cc7098f3acc65561d90bd8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Sep 10 10:35:43 2010 +0100
+  
+    In the CPANPLUS::YACSmoke prefer_makefile explicitly. May resolve
+    issues with v5.10.0 
+
+==============================
 2010-09-08 19:51:43 +0100 0.16
 ==============================
 

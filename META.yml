@@ -23,31 +23,31 @@ no_index:
 provides:
   App::SmokeBrew:
     file: lib/App/SmokeBrew.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::BuildPerl:
     file: lib/App/SmokeBrew/BuildPerl.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::IniFile:
     file: lib/App/SmokeBrew/IniFile.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::PerlVersion:
     file: lib/App/SmokeBrew/PerlVersion.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::Plugin:
     file: lib/App/SmokeBrew/Plugin.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::Plugin::CPANPLUS::YACSmoke:
     file: lib/App/SmokeBrew/Plugin/CPANPLUS/YACSmoke.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::Plugin::Null:
     file: lib/App/SmokeBrew/Plugin/Null.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::Tools:
     file: lib/App/SmokeBrew/Tools.pm
-    version: 0.16
+    version: 0.18
   App::SmokeBrew::Types:
     file: lib/App/SmokeBrew/Types.pm
-    version: 0.16
+    version: 0.18
 requires:
   Archive::Extract: 0.40
   Config::INI::Reader: 0.014
@@ -79,4 +79,4 @@ resources:
   homepage: http://github.com/bingos/smokebrew/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/smokebrew.git
-version: 0.16
+version: 0.18
