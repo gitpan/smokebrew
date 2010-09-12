@@ -14,7 +14,7 @@ use Cwd;
 use Getopt::Long;
 use vars qw[$VERSION];
 
-$VERSION = '0.18';
+$VERSION = '0.20';
 
 my @mirrors = (
   'http://cpan.hexten.net/',
@@ -119,6 +119,12 @@ has 'noclean' => (
   default => 0,
 );
 
+has 'nozapman' => (
+  is => 'ro',
+  isa => 'Bool',
+  default => 0,
+);
+
 has 'verbose' => (
   is => 'ro',
   isa => 'Bool',
@@ -200,7 +206,7 @@ sub run {
         version   => $perl,
         map { ( $_ => $self->$_ ) } 
           grep { defined $self->$_ } 
-            qw(builddir prefix verbose noclean skiptest perlargs mirrors make),
+            qw(builddir prefix verbose noclean nozapman skiptest perlargs mirrors make),
       );
       unless ( $build ) {
         error( "Could not create a build object for ($perl)", $self->verbose );
