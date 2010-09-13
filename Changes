@@ -1,4 +1,22 @@
 ==============================
+2010-09-13 16:14:29 +0100 0.22
+==============================
+
+  commit 7582214ef802304b68383302090d3fed53e8acd5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Sep 13 16:14:29 2010 +0100
+  
+    Bump to 0.22
+
+  commit 0d5051cc461158888296542eb7d7f71b798ab2f9
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Sep 13 16:12:57 2010 +0100
+  
+    Unfortunate side-effect of removing the man pages is that CPANPLUS
+    will assume that it needs to use sudo. Explicitly tell CPANPLUS to
+    not use sudo. 
+
+==============================
 2010-09-12 15:36:55 +0100 0.20
 ==============================
 
