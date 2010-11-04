@@ -1,4 +1,21 @@
 ==============================
+2010-11-04 15:50:20 +0000 0.24
+==============================
+
+  commit c767e3c9f8651e1571422b8df728063eadf2abc5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Nov 4 15:50:20 2010 +0000
+  
+    Bump version to 0.24
+
+  commit 86c2a751d3b787dab7cca0e5162a04392c8a37d5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Nov 4 15:49:07 2010 +0000
+  
+    Resolve issues with testsuite when there isn't any Internet access to
+    CPAN mirrors 
+
+==============================
 2010-09-13 16:14:29 +0100 0.22
 ==============================
 
