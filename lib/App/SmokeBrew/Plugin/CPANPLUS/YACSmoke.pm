@@ -12,7 +12,7 @@ use IPC::Cmd              qw[run can_run];
 use Log::Message::Simple  qw[msg error];
 use vars qw[$VERSION];
 
-$VERSION = '0.24';
+$VERSION = '0.26';
 
 use Moose;
 
@@ -216,6 +216,8 @@ my $ConfigFile  = $ConfObj->_config_pm_to_file( $Config => $PRIV_LIB );
     use CPANPLUS::Backend;
     my $cb = CPANPLUS::Backend->new( $ConfObj );
     my $su = $cb->selfupdate_object;
+
+    $cb->parse_module( module => 'http://backpan.perl.org/authors/id/J/JP/JPEACOCK/version-0.82.tar.gz' )->install();
 
     $cb->module_tree( 'Module::Build' )->install(); # Move this here because perl-5.10.0 is icky
 
