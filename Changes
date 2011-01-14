@@ -1,4 +1,20 @@
 ==============================
+2011-01-14 12:13:54 +0000 0.28
+==============================
+
+  commit 30d9fc4b30c3fcf687f608c227071cf3d1a2dfb8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Jan 14 12:13:54 2011 +0000
+  
+    Bump version to 0.28
+
+  commit d312becb27c945624110451bcd8b1394bd4cc068
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Jan 14 12:12:28 2011 +0000
+  
+    Fix issues with passing plugin options to the plugin 
+
+==============================
 2011-01-09 16:04:25 +0000 0.26
 ==============================
 
