@@ -1,4 +1,27 @@
 ==============================
+2011-02-22 14:26:49 +0000 0.30
+==============================
+
+  commit f48d631f196909280032a71ab58d66ae8d0e4521
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Feb 22 14:26:49 2011 +0000
+  
+    Bump to version 0.30
+
+  commit f97076a53933f5c86a735f69962cf0beae73c3cb
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Feb 22 13:51:17 2011 +0000
+  
+    Resolve bugs regarding perl versions that end in '0' due to floating
+    pointness
+
+  commit d0a0324982c15136acef13f60de3d91e70a291e6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Feb 21 11:21:48 2011 +0000
+  
+    Add .gitignore 
+
+==============================
 2011-01-14 12:13:54 +0000 0.28
 ==============================
 

@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use vars qw[$VERSION];
 
-$VERSION = '0.28';
+$VERSION = '0.30';
 
 use MooseX::Types
     -declare => [qw(ArrayRefUri PerlVersion ArrayRefStr)];
@@ -28,7 +28,8 @@ coerce 'ArrayRefUri', from ArrayRef, via { [map { to_Uri($_) } @$_] };
 
 subtype( 'PerlVersion', as 'Perl::Version',
    where { ( my $ver = Perl::Version->new($_)->numify ) =~ s/_//g; 
-            defined $Module::CoreList::released{$ver} and $ver >= 5.006 },
+            $ver >= 5.006 and
+            scalar grep { $ver eq sprintf('%.6f',$_) } keys %Module::CoreList::released },
    message { "The version ($_) given is not a valid Perl version and is too old (< 5.006)" },
 );
 
