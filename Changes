@@ -1,4 +1,27 @@
 ==============================
+2011-05-15 22:28:31 +0100 0.32
+==============================
+
+  commit 41d17146ccc245facb0c77df90a6c719b2f73768
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun May 15 22:28:31 2011 +0100
+  
+    Bump version
+
+  commit 1eed2abe3a3bbbaf7c5a780ed49b33f2d9e90711
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun May 15 22:27:25 2011 +0100
+  
+    Add support for using CPAN::Perl::Releases to find perl tarballs to
+    download
+
+  commit a9a66f0ff3b368f4bf36e9fd643dafd7fb37fefb
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Mar 16 17:12:08 2011 +0000
+  
+    Update required version of Devel::PatchPerl 
+
+==============================
 2011-02-22 14:26:49 +0000 0.30
 ==============================
 

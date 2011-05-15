@@ -9,7 +9,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 1.00'
+generated_by: 'Module::Install version 1.01'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,35 +23,36 @@ no_index:
 provides:
   App::SmokeBrew:
     file: lib/App/SmokeBrew.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::BuildPerl:
     file: lib/App/SmokeBrew/BuildPerl.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::IniFile:
     file: lib/App/SmokeBrew/IniFile.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::PerlVersion:
     file: lib/App/SmokeBrew/PerlVersion.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::Plugin:
     file: lib/App/SmokeBrew/Plugin.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::Plugin::CPANPLUS::YACSmoke:
     file: lib/App/SmokeBrew/Plugin/CPANPLUS/YACSmoke.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::Plugin::Null:
     file: lib/App/SmokeBrew/Plugin/Null.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::Tools:
     file: lib/App/SmokeBrew/Tools.pm
-    version: 0.30
+    version: 0.32
   App::SmokeBrew::Types:
     file: lib/App/SmokeBrew/Types.pm
-    version: 0.30
+    version: 0.32
 requires:
   Archive::Extract: 0.40
+  CPAN::Perl::Releases: 0.02
   Config::INI::Reader: 0.014
-  Devel::PatchPerl: 0.14
+  Devel::PatchPerl: 0.24
   File::Fetch: 0.24
   File::Path: 2.08
   File::Spec: 3.31
@@ -59,7 +60,7 @@ requires:
   IPC::Cmd: 0.58
   List::MoreUtils: 0.22
   Log::Message::Simple: 0.06
-  Module::CoreList: 2.33
+  Module::CoreList: 2.49
   Module::Load::Conditional: 0.38
   Module::Pluggable: 3.9
   Moose: 1.03
@@ -79,4 +80,4 @@ resources:
   homepage: http://github.com/bingos/smokebrew/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/smokebrew.git
-version: 0.30
+version: 0.32
