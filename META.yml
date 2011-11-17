@@ -3,13 +3,14 @@ abstract: 'Automated Perl building and installation for CPAN Testers'
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.62
   File::Temp: 0.22
   Test::More: 0.47
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.62
 distribution_type: module
-generated_by: 'Module::Install version 1.01'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.04'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,31 +24,31 @@ no_index:
 provides:
   App::SmokeBrew:
     file: lib/App/SmokeBrew.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::BuildPerl:
     file: lib/App/SmokeBrew/BuildPerl.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::IniFile:
     file: lib/App/SmokeBrew/IniFile.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::PerlVersion:
     file: lib/App/SmokeBrew/PerlVersion.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::Plugin:
     file: lib/App/SmokeBrew/Plugin.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::Plugin::CPANPLUS::YACSmoke:
     file: lib/App/SmokeBrew/Plugin/CPANPLUS/YACSmoke.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::Plugin::Null:
     file: lib/App/SmokeBrew/Plugin/Null.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::Tools:
     file: lib/App/SmokeBrew/Tools.pm
-    version: 0.32
+    version: 0.34
   App::SmokeBrew::Types:
     file: lib/App/SmokeBrew/Types.pm
-    version: 0.32
+    version: 0.34
 requires:
   Archive::Extract: 0.40
   CPAN::Perl::Releases: 0.02
@@ -71,13 +72,16 @@ requires:
   MooseX::Types::Email: 0.003
   MooseX::Types::Moose: 0.21
   MooseX::Types::Path::Class: 0.05
-  MooseX::Types::URI: 0.02
+  MooseX::Types::URI: 0.03
   Parse::CPAN::Meta: 1.40
   Perl::Version: 1.009
   URI: 1.54
   perl: 5.6.0
 resources:
-  homepage: http://github.com/bingos/smokebrew/tree
+  homepage: https://github.com/bingos/smokebrew/tree
   license: http://dev.perl.org/licenses/
-  repository: git://github.com/bingos/smokebrew.git
-version: 0.32
+  repository:
+    type: git
+    url: git://github.com/bingos/smokebrew.git
+    web: https://github.com/bingos/smokebrew/tree
+version: 0.34
