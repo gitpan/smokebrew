@@ -1,0 +1,258 @@
+==============================
+2012-02-28 22:22:31 +0000 0.36
+==============================
+
+  commit 6131a9093b7444421885d018d58d0a490655235a
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Feb 28 22:22:31 2012 +0000
+  
+    Rearrange the hard-coded CPAN mirrors 
+
+==============================
+2011-11-17 21:26:53 +0000 0.34
+==============================
+
+  commit 930517add66b304d82df141b1e74b2a67a01ebf5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Nov 17 21:26:53 2011 +0000
+  
+    Bump required version of MooseX::Types::URI 
+
+==============================
+2011-05-15 22:28:31 +0100 0.32
+==============================
+
+  commit 41d17146ccc245facb0c77df90a6c719b2f73768
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun May 15 22:28:31 2011 +0100
+  
+    Bump version
+
+  commit 1eed2abe3a3bbbaf7c5a780ed49b33f2d9e90711
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun May 15 22:27:25 2011 +0100
+  
+    Add support for using CPAN::Perl::Releases to find perl tarballs to
+    download
+
+  commit a9a66f0ff3b368f4bf36e9fd643dafd7fb37fefb
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Mar 16 17:12:08 2011 +0000
+  
+    Update required version of Devel::PatchPerl 
+
+==============================
+2011-02-22 14:26:49 +0000 0.30
+==============================
+
+  commit f48d631f196909280032a71ab58d66ae8d0e4521
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Feb 22 14:26:49 2011 +0000
+  
+    Bump to version 0.30
+
+  commit f97076a53933f5c86a735f69962cf0beae73c3cb
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Feb 22 13:51:17 2011 +0000
+  
+    Resolve bugs regarding perl versions that end in '0' due to floating
+    pointness
+
+  commit d0a0324982c15136acef13f60de3d91e70a291e6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Feb 21 11:21:48 2011 +0000
+  
+    Add .gitignore 
+
+==============================
+2011-01-14 12:13:54 +0000 0.28
+==============================
+
+  commit 30d9fc4b30c3fcf687f608c227071cf3d1a2dfb8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Jan 14 12:13:54 2011 +0000
+  
+    Bump version to 0.28
+
+  commit d312becb27c945624110451bcd8b1394bd4cc068
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Jan 14 12:12:28 2011 +0000
+  
+    Fix issues with passing plugin options to the plugin 
+
+==============================
+2011-01-09 16:04:25 +0000 0.26
+==============================
+
+  commit 2d75b8b1b0ebf6f095430428a1792a9d78fc19a5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun Jan 9 16:04:25 2011 +0000
+  
+    Bump version to 0.26
+
+  commit 5c0882056231d997efb1ac3f2bdc46ec1c2fdf6b
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun Jan 9 15:58:16 2011 +0000
+  
+    Added plugin options that may be specified in the configuration file 
+
+==============================
+2010-11-04 15:50:20 +0000 0.24
+==============================
+
+  commit c767e3c9f8651e1571422b8df728063eadf2abc5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Nov 4 15:50:20 2010 +0000
+  
+    Bump version to 0.24
+
+  commit 86c2a751d3b787dab7cca0e5162a04392c8a37d5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Nov 4 15:49:07 2010 +0000
+  
+    Resolve issues with testsuite when there isn't any Internet access to
+    CPAN mirrors 
+
+==============================
+2010-09-13 16:14:29 +0100 0.22
+==============================
+
+  commit 7582214ef802304b68383302090d3fed53e8acd5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Sep 13 16:14:29 2010 +0100
+  
+    Bump to 0.22
+
+  commit 0d5051cc461158888296542eb7d7f71b798ab2f9
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon Sep 13 16:12:57 2010 +0100
+  
+    Unfortunate side-effect of removing the man pages is that CPANPLUS
+    will assume that it needs to use sudo. Explicitly tell CPANPLUS to
+    not use sudo. 
+
+==============================
+2010-09-12 15:36:55 +0100 0.20
+==============================
+
+  commit 3ca0f02b2d858cb238a2023732395b4fb78b7b10
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun Sep 12 15:36:55 2010 +0100
+  
+    Document the nozapman option and make it actually have an effect.
+    Document the mirrors option to BuildPerl.
+
+  commit 05413494d49ed633eb3e8c10404b0036c0f577af
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun Sep 12 13:35:57 2010 +0100
+  
+    Add zapping of the man pages that are generated when installing a
+    perl. 
+
+==============================
+2010-09-10 10:35:43 +0100 0.18
+==============================
+
+  commit 6b1f379d74d48ae4f5cc7098f3acc65561d90bd8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Sep 10 10:35:43 2010 +0100
+  
+    In the CPANPLUS::YACSmoke prefer_makefile explicitly. May resolve
+    issues with v5.10.0 
+
+==============================
+2010-09-08 19:51:43 +0100 0.16
+==============================
+
+  commit be25e4dddbdbf3fb0d51f502c6b4e47d221f76d8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 8 19:51:43 2010 +0100
+  
+    Mirrors weren't propagating down through BuildPerl to the fetching of
+    the perl source. Fixed. 
+
+==============================
+2010-09-01 20:50:52 +0100 0.14
+==============================
+
+  commit 0993e1b51b83e69817304834f598d7a7e8690c61
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 1 20:50:52 2010 +0100
+  
+    Added setting the PERL_MM_USE_DEFAULT env var in the
+    CPANPLUS::YACSmoke plugin 
+
+==============================
+2010-09-01 20:12:20 +0100 0.12
+==============================
+
+  commit 2218f9d076e7527a8db0000a2a2a4838e1766877
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 1 20:12:20 2010 +0100
+  
+    Make --forcecfg actually work 
+
+==============================
+2010-09-01 19:34:46 +0100 0.10
+==============================
+
+  commit d4b2c9205aa3dc9e41993954a67716a6c2b60a98
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Sep 1 19:34:46 2010 +0100
+  
+    Added --forcecfg option to enable reconfiguration on an existing
+    build 
+
+==============================
+2010-08-26 16:19:54 +0100 0.08
+==============================
+
+  commit ad243e453bbec974c30968570615881ae9f89ac8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Thu Aug 26 16:19:54 2010 +0100
+  
+    Added the --install switch so we can specify a particular perl
+    version to install
+
+  commit e58565406d058b25e949fbaa0e35049eee46fcb6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Jun 23 09:18:47 2010 +0100
+  
+    Move the installation of Module::Build ahead of selfupdate 
+
+==============================
+2010-06-02 23:31:28 +0100 0.06
+==============================
+
+  commit ff48321fc3f4e372bba7ef3f3830bdd67bacacd5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Jun 2 23:31:28 2010 +0100
+  
+    Fixed the rather clunky plugin loading code 
+
+==============================
+2010-05-24 21:42:06 +0100 0.04
+==============================
+
+  commit ea6ed7931a76917f112c5c40345b9c6ceaa709f1
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon May 24 21:42:06 2010 +0100
+  
+    Bump to 0.04
+
+  commit a8a0ab112b0e4fb5045d2bad821c0dffcd23b5a8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Mon May 24 21:40:23 2010 +0100
+  
+    Change from using File::chdir to File::pushd, File::chdir looks to be
+    broken with 5.13.1+
+
+  commit 3a5c14c3fb84adb14ab92130084dab5643ef7767
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri May 21 16:19:27 2010 +0100
+  
+    Added MANIFEST 
+
+==============
+End of Excerpt
+==============

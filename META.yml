@@ -3,14 +3,14 @@ abstract: 'Automated Perl building and installation for CPAN Testers'
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
 build_requires:
-  ExtUtils::MakeMaker: 6.62
+  ExtUtils::MakeMaker: 6.59
   File::Temp: 0.22
   Test::More: 0.47
 configure_requires:
-  ExtUtils::MakeMaker: 6.62
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
 dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
+generated_by: 'Module::Install version 1.05'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,31 +24,31 @@ no_index:
 provides:
   App::SmokeBrew:
     file: lib/App/SmokeBrew.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::BuildPerl:
     file: lib/App/SmokeBrew/BuildPerl.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::IniFile:
     file: lib/App/SmokeBrew/IniFile.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::PerlVersion:
     file: lib/App/SmokeBrew/PerlVersion.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::Plugin:
     file: lib/App/SmokeBrew/Plugin.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::Plugin::CPANPLUS::YACSmoke:
     file: lib/App/SmokeBrew/Plugin/CPANPLUS/YACSmoke.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::Plugin::Null:
     file: lib/App/SmokeBrew/Plugin/Null.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::Tools:
     file: lib/App/SmokeBrew/Tools.pm
-    version: 0.34
+    version: 0.36
   App::SmokeBrew::Types:
     file: lib/App/SmokeBrew/Types.pm
-    version: 0.34
+    version: 0.36
 requires:
   Archive::Extract: 0.40
   CPAN::Perl::Releases: 0.02
@@ -84,4 +84,4 @@ resources:
     type: git
     url: git://github.com/bingos/smokebrew.git
     web: https://github.com/bingos/smokebrew/tree
-version: 0.34
+version: 0.36
