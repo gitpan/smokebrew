@@ -14,7 +14,7 @@ use Cwd;
 use Getopt::Long;
 use vars qw[$VERSION];
 
-$VERSION = '0.38';
+$VERSION = '0.40';
 
 my @mirrors = (
   'http://www.cpan.org/',
@@ -174,6 +174,16 @@ has 'recent' => (
   isa => 'Bool',
 );
 
+has 'modern' => (
+  is => 'ro',
+  isa => 'Bool',
+);
+
+has 'latest' => (
+  is => 'ro',
+  isa => 'Bool',
+);
+
 has 'install' => (
   is => 'ro',
   isa => 'Str',
@@ -201,6 +211,8 @@ sub _build__perls {
   $arg = 'rel' if $self->stable;
   $arg = 'dev' if $self->devel;
   $arg = 'recent' if $self->recent;
+  $arg = 'modern' if $self->modern;
+  $arg = 'latest' if $self->latest;
   $arg = $self->install if $self->install;
   return [ grep { $_ ne '5.6.0' and $_  ne '5.8.0' } App::SmokeBrew::Tools->perls( $arg ) ];
 }

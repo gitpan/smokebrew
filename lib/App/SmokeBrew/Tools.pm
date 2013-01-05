@@ -11,7 +11,7 @@ use Perl::Version;
 use URI;
 use vars qw[$VERSION];
 
-$VERSION = '0.38';
+$VERSION = '0.40';
 
 my @mirrors = (
   'http://www.cpan.org/',
@@ -72,7 +72,21 @@ sub smokebrew_dir {
 sub perls {
   my $type = shift;
   $type = shift if $type->isa(__PACKAGE__);
-  unless ( $type and $type =~ /^(rel|dev|recent)$/i ) {
+  if ( $type and $type eq 'latest' ) {
+    my %perls;
+    foreach my $pv ( map { Perl::Version->new($_) } perls('recent') ) {
+      my $vers = $pv->version;
+      unless ( exists $perls{$vers} ) {
+        $perls{$vers} = $pv;
+        next;
+      }
+      $perls{$vers} = $pv if $pv > $perls{$vers};
+    }
+    return map { _format_version($_) } map { $perls{$_} }
+      sort { $perls{$a} <=> $perls{$b} } keys %perls;
+    ;
+  }
+  unless ( $type and $type =~ /^(rel|dev|recent|modern)$/i ) {
     $type =~ s/[^\d\.]+//g if $type;
   }
   return
@@ -87,6 +101,9 @@ sub perls {
       }
       elsif ( $type and $type eq 'recent' ) {
           _is_recent($_);
+      }
+      elsif ( $type and $type eq 'modern' ) {
+          _is_modern($_);
       }
       elsif ( $type ) {
           $_->normal =~ /\Q$type\E$/;
@@ -117,6 +134,14 @@ sub _is_recent {
   return 0 if _is_ancient($pv);
   return 0 if _is_dev($pv);
   return 1 if $pv->numify >= 5.008009;
+  return 0;
+}
+
+sub _is_modern {
+  my $pv = shift;
+  return 0 if _is_ancient($pv);
+  return 0 if _is_dev($pv);
+  return 1 if $pv->numify >= 5.010000;
   return 0;
 }
 
