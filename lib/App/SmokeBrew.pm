@@ -1,4 +1,9 @@
 package App::SmokeBrew;
+{
+  $App::SmokeBrew::VERSION = '0.46';
+}
+
+#ABSTRACT: The guts of smokebrew
 
 use strict;
 use warnings;
@@ -12,9 +17,6 @@ use Module::Pluggable search_path => 'App::SmokeBrew::Plugin';
 use File::Spec;
 use Cwd;
 use Getopt::Long;
-use vars qw[$VERSION];
-
-$VERSION = '0.44';
 
 my @mirrors = (
   'http://www.cpan.org/',
@@ -297,9 +299,15 @@ q[Smokebrew, look what's inside of you];
 
 __END__
 
+=pod
+
 =head1 NAME
 
 App::SmokeBrew - The guts of smokebrew
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -321,18 +329,19 @@ This method is called by L<smokebrew> to do all the work.
 
 This method is required by L<MooseX::ConfigFromFile> to load the C<configfile>.
 
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
-
 =head1 SEE ALSO
 
 L<smokebrew>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

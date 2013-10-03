@@ -1,10 +1,12 @@
 package App::SmokeBrew::PerlVersion;
+{
+  $App::SmokeBrew::PerlVersion::VERSION = '0.46';
+}
+
+#ABSTRACT: Moose role for perl versions
 
 use strict;
 use warnings;
-use vars qw[$VERSION];
-
-$VERSION = '0.44';
 
 use Moose::Role;
 use Perl::Version;
@@ -38,9 +40,15 @@ qq[Smokin'];
 
 __END__
 
+=pod
+
 =head1 NAME
 
 App::SmokeBrew::PerlVersion - Moose role for perl versions
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -85,16 +93,6 @@ Returns true if the perl version is a C<development> perl release, false otherwi
 
 =back
 
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
-
 =head1 SEE ALSO
 
 L<smokebrew>
@@ -104,5 +102,16 @@ L<Moose::Role>
 L<App::SmokeBrew::Types>
 
 L<Perl::Version>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

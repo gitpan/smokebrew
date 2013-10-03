@@ -1,4 +1,9 @@
 package App::SmokeBrew::Plugin::CPANPLUS::YACSmoke;
+{
+  $App::SmokeBrew::Plugin::CPANPLUS::YACSmoke::VERSION = '0.46';
+}
+
+#ABSTRACT: A smokebrew plugin for CPANPLUS::YACSmoke based smokers
 
 use strict;
 use warnings;
@@ -10,9 +15,6 @@ use File::Path            qw[rmtree mkpath];
 use File::pushd           qw[pushd];
 use IPC::Cmd              qw[run can_run];
 use Log::Message::Simple  qw[msg error];
-use vars qw[$VERSION];
-
-$VERSION = '0.44';
 
 use Moose;
 
@@ -28,7 +30,7 @@ has '_cpanplus' => (
 sub _build__cpanplus {
   my $self = shift;
   $self->builddir->mkpath;
-  my $default = 'B/BI/BINGOS/CPANPLUS-0.9003.tar.gz';
+  my $default = 'B/BI/BINGOS/CPANPLUS-0.9142.tar.gz';
   my $path;
   my $ff = File::Fetch->new( uri => 'http://cpanidx.org/cpanidx/yaml/mod/CPANPLUS' );
   my $stat = $ff->fetch( to => $self->builddir->absolute );
@@ -309,9 +311,15 @@ qq[Smokin'];
 
 __END__
 
+=pod
+
 =head1 NAME
 
 App::SmokeBrew::Plugin::CPANPLUS::YACSmoke - A smokebrew plugin for CPANPLUS::YACSmoke based smokers
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -335,16 +343,6 @@ Called by L<smokebrew> to perform the CPAN Testing configuration.
 
 =back
 
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
-
 =head1 SEE ALSO
 
 L<App::SmokeBrew::Plugin>
@@ -354,5 +352,16 @@ L<smokebrew>
 L<CPANPLUS>
 
 L<CPANPLUS::YACSmoke>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

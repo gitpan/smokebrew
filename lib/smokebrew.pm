@@ -1,25 +1,32 @@
 package smokebrew;
+{
+  $smokebrew::VERSION = '0.46';
+}
+
+#ABSTRACT: Automated Perl building and installation for CPAN Testers
 
 use strict;
 use warnings;
-use vars qw[$VERSION];
-
-$VERSION = '0.44';
 
 1;
 
 __END__
 
+=pod
+
 =head1 NAME
 
 smokebrew - Automated Perl building and installation for CPAN Testers
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
   smokebrew --email tester@cpan.org --builddir /home/tester/pit/build --prefix /home/tester/pit/rel \
             --perlargs "-Dusethreads" --perlargs "-Duse64bitint" --mirrors http://cpan.hexten.net/ \
             --plugin App::SmokeBrew::Plugin::CPANPLUS::YACSmoke --recent --verbose
-
 
 =head1 DESCRIPTION
 
@@ -387,16 +394,6 @@ eg. L<CPANPLUS::YACSmoke>.
 
   someopt = foobar
 
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
-
 =head1 KUDOS
 
 GUGOD for perlbrew, which inspired this utility ( and obviously gave it its name ).
@@ -415,5 +412,16 @@ L<Module::CoreList>
 L<MooseX::Types::Email>
 
 L<App::SmokeBrew::Plugin>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

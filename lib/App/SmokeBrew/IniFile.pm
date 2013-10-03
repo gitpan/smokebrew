@@ -1,11 +1,13 @@
 package App::SmokeBrew::IniFile;
+{
+  $App::SmokeBrew::IniFile::VERSION = '0.46';
+}
+
+#ABSTRACT: Parse the smokebrew configuration file
 
 use strict;
 use warnings;
 use base 'Config::INI::Reader';
-use vars qw[$VERSION];
-
-$VERSION = '0.44';
 
 sub set_value {
   my ($self, $name, $value) = @_;
@@ -27,9 +29,15 @@ qq[Smokin'];
 
 __END__
 
+=pod
+
 =head1 NAME
 
 App::SmokeBrew::IniFile - Parse the smokebrew configuration file
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -75,16 +83,6 @@ times the INI file it will become an C<arrayref>.
 
 =back
 
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
-
 =head1 KUDOS
 
 Thanks to Ricardo Signes for pointing out his awesome module to me.
@@ -92,5 +90,16 @@ Thanks to Ricardo Signes for pointing out his awesome module to me.
 =head1 SEE ALSO
 
 L<Config::INI::Reader>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

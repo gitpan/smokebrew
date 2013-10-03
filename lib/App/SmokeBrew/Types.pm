@@ -1,10 +1,12 @@
 package App::SmokeBrew::Types;
+{
+  $App::SmokeBrew::Types::VERSION = '0.46';
+}
+
+#ABSTRACT: Moose types for smokebrew
 
 use strict;
 use warnings;
-use vars qw[$VERSION];
-
-$VERSION = '0.44';
 
 use MooseX::Types
     -declare => [qw(ArrayRefUri PerlVersion ArrayRefStr)];
@@ -42,9 +44,15 @@ qq[Smokin'];
 
 __END__
 
+=pod
+
 =head1 NAME
 
 App::SmokeBrew::Types - Moose types for smokebrew
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -100,17 +108,9 @@ Coerces from C<Str>.
 
 =back
 
-=head1 AUTHOR
+=head1 KUDOS
 
-Chris C<BinGOs> Williams
-
-with thanks to Florian Ragwitz for the L<MooseX::Types::URI> sugar.
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
+Thanks to Florian Ragwitz for the L<MooseX::Types::URI> sugar.
 
 =head1 SEE ALSO
 
@@ -119,5 +119,16 @@ L<URI>
 L<Perl::Version>
 
 L<MooseX::Types::URI>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

@@ -1,4 +1,9 @@
 package App::SmokeBrew::Tools;
+{
+  $App::SmokeBrew::Tools::VERSION = '0.46';
+}
+
+#ABSTRACT: Various utility functions for smokebrew
 
 use strict;
 use warnings;
@@ -9,9 +14,6 @@ use List::MoreUtils qw[uniq];
 use Module::CoreList;
 use Perl::Version;
 use URI;
-use vars qw[$VERSION];
-
-$VERSION = '0.44';
 
 my @mirrors = (
   'http://www.cpan.org/',
@@ -183,9 +185,15 @@ qq[Smoke tools look what's inside of you];
 
 __END__
 
+=pod
+
 =head1 NAME
 
 App::SmokeBrew::Tools - Various utility functions for smokebrew
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -271,16 +279,6 @@ Returns the version with the C<perl-> prefix.
 
 =back
 
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
-
 =head1 SEE ALSO
 
 L<smokebrew>
@@ -290,5 +288,16 @@ L<Perl::Version>
 L<File::Fetch>
 
 L<Archive::Extract>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

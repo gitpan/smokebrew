@@ -1,4 +1,9 @@
 package App::SmokeBrew::BuildPerl;
+{
+  $App::SmokeBrew::BuildPerl::VERSION = '0.46';
+}
+
+#ABSTRACT: build and install a particular version of Perl
 
 use strict;
 use warnings;
@@ -13,9 +18,6 @@ use Cwd         qw[chdir cwd];
 use IPC::Cmd    qw[run can_run];
 use File::Path  qw[mkpath rmtree];
 use File::pushd qw[pushd];
-use vars        qw[$VERSION];
-
-$VERSION = '0.44';
 
 use Moose;
 use Moose::Util::TypeConstraints;
@@ -156,9 +158,15 @@ qq[Building a perl];
 
 __END__
 
+=pod
+
 =head1 NAME
 
 App::SmokeBrew::BuildPerl - build and install a particular version of Perl
+
+=head1 VERSION
+
+version 0.46
 
 =head1 SYNOPSIS
 
@@ -266,20 +274,21 @@ directory.
 
 =back
 
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
-
 =head1 SEE ALSO
 
 L<App::perlbrew>
 
 L<Module::CoreList>
+
+=head1 AUTHOR
+
+Chris Williams <chris@bingosnet.co.uk>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Chris Williams.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
