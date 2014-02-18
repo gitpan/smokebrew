@@ -1,6 +1,30 @@
 ==================================================
-Changes from 2008-10-04 00:00:00 +0000 to present.
+Changes from 2009-02-19 00:00:00 +0000 to present.
 ==================================================
+
+-----------------------------------------
+version 0.48 at 2014-02-18 00:37:05 +0000
+-----------------------------------------
+
+  Change: 62adce1f670e3e15e0f1311fd7b6b81b013cc8b6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date : 2014-02-18 00:37:05 +0000
+
+    Release engineering for 0.48 
+
+  Change: 6703b92659fabb8d84a8176468ca752f4031a756
+  Author: Chris Williams <chris@bingosnet.co.uk>
+  Date : 2014-02-18 00:26:13 +0000
+
+    Merge pull request #1 from mephinet/set-make-for-configure-too
+
+    set MAKE in environment for Configure 
+
+  Change: aac4ec8a351bf2da4478d2125bd9aac95d8fa28c
+  Author: mephinet <mephinet@gmx.net>
+  Date : 2014-02-17 20:12:41 +0000
+
+    set MAKE in environment for Configure 
 
 -----------------------------------------
 version 0.46 at 2013-10-03 17:44:42 +0000

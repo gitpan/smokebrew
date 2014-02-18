@@ -1,8 +1,5 @@
 package App::SmokeBrew::BuildPerl;
-{
-  $App::SmokeBrew::BuildPerl::VERSION = '0.46';
-}
-
+$App::SmokeBrew::BuildPerl::VERSION = '0.48';
 #ABSTRACT: build and install a particular version of Perl
 
 use strict;
@@ -113,6 +110,7 @@ sub build_perl {
     my @conf_opts = $self->perlargs;
     push @conf_opts, '-Dusedevel' if $self->is_dev_release();
     unshift @conf_opts, '-Dprefix=' . $prefix;
+    local $ENV{MAKE} = $self->make;
     my $cmd = [ './Configure', '-des', @conf_opts ];
     return unless scalar run( command => $cmd,
                          verbose => 1, );
@@ -160,13 +158,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 App::SmokeBrew::BuildPerl - build and install a particular version of Perl
 
 =head1 VERSION
 
-version 0.46
+version 0.48
 
 =head1 SYNOPSIS
 
@@ -286,7 +286,7 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Chris Williams.
+This software is copyright (c) 2014 by Chris Williams.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
